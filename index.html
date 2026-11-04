@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Bloom & Butter Café & Bakery - Artisanal pastries, slow-crafted coffee, and vibrant all-day brunch in a serene pastel sanctuary." />
+  <title>Bloom & Butter Café | Artisanal Bakery & Kitchen</title>
+  
+  <!-- Google Fonts: Playfair Display for graceful serif titles & Plus Jakarta Sans for ultra-clean readability -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- =========================================================
+       HEADER & NAVIGATION
+       ========================================================= -->
+  <header class="site-header" id="top">
+    <div class="container header-container">
+      <!-- Brand Logo -->
+      <a href="#top" class="brand-logo" aria-label="Bloom and Butter Home">
+        <span class="logo-icon" aria-hidden="true">🌸</span>
+        <span class="logo-text">Bloom <span class="ampersand">&amp;</span> Butter</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="main-nav" id="main-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#specials" class="nav-link">Specials</a></li>
+          <li><a href="#menu" class="nav-link">Menu</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+          <li><a href="#contact" class="nav-link">Visit &amp; Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions (Theme Toggle & CTA) -->
+      <div class="header-actions">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="btn-icon" aria-label="Toggle light and dark pastel theme" title="Toggle Theme">
+          <span class="theme-icon light-icon" aria-hidden="true">🌙</span>
+          <span class="theme-icon dark-icon" aria-hidden="true">☀️</span>
+        </button>
+
+        <!-- Primary Action -->
+        <a href="#reservation" class="btn btn-primary nav-cta">Book Table</a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="menu-toggle" class="btn-icon hamburger" aria-label="Open mobile navigation" aria-expanded="false" aria-controls="main-nav">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================================================
+         HERO SECTION
+         ========================================================= -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        
+        <!-- Hero Text Content -->
+        <div class="hero-content">
+          <div class="hero-pill">
+            <span class="pill-sparkle">✨</span> Freshly Baked Every Sunrise
+          </div>
+          <h1 class="hero-title">
+            Where every bite is a sweet, <span class="highlight-text">pastel daydream.</span>
+          </h1>
+          <p class="hero-desc">
+            Welcome to Bloom &amp; Butter — an artisan culinary haven serving organic sourdough pastries, botanical espresso drinks, and wholesome, locally-sourced brunch in a peaceful ambiance.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#menu" class="btn btn-primary">
+              <span>View Full Menu</span>
+              <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#reservation" class="btn btn-outline">Reserve a Table</a>
+          </div>
+
+          <!-- Quick Trust Badges -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">4.9 ★</span>
+              <span class="stat-label">Over 1,200+ reviews</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Organic &amp; Farm Fresh</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">Daily</span>
+              <span class="stat-label">Small-batch baking</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Display -->
+        <div class="hero-visual">
+          <div class="visual-wrapper">
+            <div class="decorative-blob blob-1"></div>
+            <div class="decorative-blob blob-2"></div>
+            <img 
+              src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1000&q=80" 
+              alt="Artisanal pastry and fresh latte served at Bloom &amp; Butter cafe" 
+              class="hero-img floating-animation" 
+              loading="eager"
+            />
+            <!-- Floating Floating Accent Cards -->
+            <div class="floating-badge badge-signature">
+              <span class="badge-icon">🥐</span>
+              <div>
+                <strong>Rose Pistachio Croissant</strong>
+                <span class="badge-sub">Chef's Signature</span>
+              </div>
+            </div>
+            <div class="floating-badge badge-coffee">
+              <span class="badge-icon">☕</span>
+              <div>
+                <strong>Specialty Roast</strong>
+                <span class="badge-sub">Single-origin beans</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================
+         ABOUT SECTION
+         ========================================================= -->
+    <section class="about-section" id="about">
+      <div class="container about-container">
+        
+        <!-- About Image Composite -->
+        <div class="about-visual">
+          <div class="about-image-card">
+            <img 
+              src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80" 
+              alt="Sunlit aesthetic pastel dining table in our cafe" 
+              class="about-img-main" 
+              loading="lazy"
+            />
+            <div class="experience-badge">
+              <span class="badge-year">Est. 2018</span>
+              <span class="badge-title">Handcrafted with Love</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- About Story Text -->
+        <div class="about-content">
+          <span class="section-tag">Our Philosophy</span>
+          <h2 class="section-title">A quiet sanctuary for mindful morning rituals.</h2>
+          <p class="about-paragraph">
+            Bloom &amp; Butter began with a simple belief: dining should be an uplifting sensory pause in your busy day. We blend the elegance of traditional French patisserie techniques with fresh, contemporary farm-to-table culinary thinking.
+          </p>
+          <p class="about-paragraph">
+            Every loaf of brioche is slowly fermented for 36 hours, every fruit compote is made in-house using organic seasonal berries, and our botanical syrups are simmered with whole blossoms and herbs.
+          </p>
+
+          <!-- Core Pillars Grid -->
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon">🌿</div>
+              <div>
+                <h3 class="feature-name">Local Farm Partnerships</h3>
+                <p class="feature-text">Eggs, butter, and produce sourced weekly from nearby sustainable pastures.</p>
+              </div>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">✨</div>
+              <div>
+                <h3 class="feature-name">Allergen-Conscious</h3>
+                <p class="feature-text">Thoughtful vegan, dairy-free, and gluten-friendly creations clearly marked.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SPECIALS & OFFERS SECTION
+         ========================================================= -->
+    <section class="specials-section" id="specials">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Curated Highlights</span>
+          <h2 class="section-title">Weekly Specials &amp; Seasonal Delights</h2>
+          <p class="section-subtitle">Specially paired combos and seasonal creations available for a limited window.</p>
+        </div>
+
+        <div class="specials-grid">
+          <!-- Special 1 -->
+          <article class="special-card card-blush">
+            <span class="offer-pill">Morning Ritual Deal</span>
+            <h3 class="special-title">The Baker's Sunrise Duo</h3>
+            <p class="special-desc">Any freshly baked signature viennoiserie paired with our signature single-origin flat white or iced matcha.</p>
+            <div class="special-footer">
+              <div class="special-price">
+                <span class="original-price">₹550</span>
+                <span class="discounted-price">₹390</span>
+              </div>
+              <span class="time-limit">Daily: 8:00 AM – 11:00 AM</span>
+            </div>
+          </article>
+
+          <!-- Special 2 -->
+          <article class="special-card card-mint">
+            <span class="offer-pill">Chef's Feature</span>
+            <h3 class="special-title">Weekend Lavender High Tea</h3>
+            <p class="special-desc">A three-tiered pastel spread featuring mini choux pastries, cucumber-mint brioche, and loose-leaf herbal tisanes.</p>
+            <div class="special-footer">
+              <div class="special-price">
+                <span class="discounted-price">₹890 / person</span>
+              </div>
+              <span class="time-limit">Sat &amp; Sun: 1:00 PM – 4:30 PM</span>
+            </div>
+          </article>
+
+          <!-- Special 3 -->
+          <article class="special-card card-butter">
+            <span class="offer-pill">Sunset Special</span>
+            <h3 class="special-title">Sweet Hour &amp; Cold Brew</h3>
+            <p class="special-desc">Take 20% off all cake slices and tarts when ordering any specialty cold brew or botanical soda.</p>
+            <div class="special-footer">
+              <div class="special-price">
+                <span class="discounted-price">20% Off Sweets</span>
+              </div>
+              <span class="time-limit">Mon – Fri: 3:30 PM – 6:00 PM</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         MENU SECTION WITH CATEGORY FILTER
+         ========================================================= -->
+    <section class="menu-section" id="menu">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-tag">Taste Our Craft</span>
+          <h2 class="section-title">The Seasonal Menu</h2>
+          <p class="section-subtitle">Handmade each day with whole food ingredients, gentle spices, and heartfelt care.</p>
+        </div>
+
+        <!-- Menu Filter Buttons -->
+        <nav class="menu-filter-nav" aria-label="Menu category filters">
+          <div class="filter-group">
+            <button class="filter-btn active" data-filter="all">All Items</button>
+            <button class="filter-btn" data-filter="bakery">Artisan Bakery</button>
+            <button class="filter-btn" data-filter="brunch">All-Day Brunch</button>
+            <button class="filter-btn" data-filter="drinks">Specialty Drinks</button>
+            <button class="filter-btn" data-filter="desserts">Desserts</button>
+          </div>
+        </nav>
+
+        <!-- Menu Items Grid (10 Diverse Items) -->
+        <div class="menu-grid" id="menu-grid">
+          
+          <!-- Item 1: Croissant -->
+          <article class="menu-card" data-category="bakery">
+            <div class="menu-card-img-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&q=80" 
+                alt="Flaky Rose Pistachio Croissant" 
+                class="menu-card-img" 
+                loading="lazy"
+              />
+              <span class="item-tag tag-bestseller">Signature</span>
+            </div>
+            <div class="menu-card-content">
+              <div class="item-header">
+                <h3 class="item-name">Rose Pistachio Croissant</h3>
+                <span class="item-price">₹290</span>
+              </div>
+              <p class="item-desc">72-layer laminated French butter croissant with Persian pistachio frangipane and organic edible rose water glaze.</p>
+              <div class="item-meta">
+                <span class="dietary-badge">Vegetarian</span>
+                <span class="calories">340 kcal</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 2: French Toast -->
+          <article class="menu-card" data-category="brunch">
+            <div class="menu-card-img-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=600&q=80" 
+                alt="Lavender Honey French Toast with fresh berries" 
+                class="menu-card-img" 
+                loading="lazy"
+              />
+              <span class="item-tag tag-new">Seasonal</span>
+            </div>
+            <div class="menu-card-content">
+              <div class="item-header">
+                <h3 class="item-name">Lavender Honey French Toast</h3>
+                <span class="item-price">₹420</span>
+              </div>
+              <p class="item-desc">Caramelized thick-cut brioche infused with Provence lavender, whipped vanilla ricotta, and macerated berries.</p>
+              <div class="item-meta">
+                <span class="dietary-badge">Vegetarian</span>
+                <span class="calories">480 kcal</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 3: Avocado Toast -->
+          <article class="menu-card" data-category="brunch">
+            <div class="menu-card-img-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=600&q=80" 
+                alt="Avocado Poached Egg Brioche" 
+                class="menu-card-img" 
+                loading="lazy"
+              />
+              <span class="item-tag tag-popular">Popular</span>
+            </div>
+            <div class="menu-card-content">
+              <div class="item-header">
+                <h3 class="item-name">Avocado &amp; Poached Egg Toast</h3>
+                <span class="item-price">₹395</span>
+              </div>
+              <p class="item-desc">Crushed Hass avocado on toasted seeded sourdough, organic poached farm egg, radishes, and dukkah seed spice.</p>
+              <div class="item-meta">
+                <span class="dietary-badge">Gluten-Free Opt</span>
+                <span class="calories">410 kcal</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 4: Strawberry Matcha -->
+          <article class="menu-card" data-category="drinks">
+            <div class="menu-card-img-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1536256263959-770b48d82b0a?auto=format&fit=crop&w=600&q=80" 
+                alt="Iced Strawberry Matcha Latte" 
+                class="menu-card-img" 
+                loading="lazy"
+              />
+              <span class="item-tag tag-trending">Trending</span>
+            </div>
+            <div class="menu-card-content">
+              <div class="item-header">
+                <h3 class="item-name">Iced Strawberry Matcha</h3>
+                <span class="item-price">₹295</span>
+              </div>
+              <p class="item-desc">Ceremonial grade Uji matcha whisked over fresh strawberry purée, oat milk, and delicate vanilla cream cold foam.</p>
+              <div class="item-meta">
+                <span class="dietary-badge">Vegan</span>
+                <span class="calories">180 kcal</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 5: Shakshuka -->
+          <article class="menu-card" data-category="brunch">
+            <div class="menu-card-img-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=600&q=80" 
+                alt="Sourdough Shakshuka Skillet" 
+                class="menu-card-img" 
+                loading="lazy"
+              />
+            </div>
+            <div class="menu-card-content">
+              <div class="item-header">
+                <h3 class="item-name">Cast-Iron Shakshuka</h3>
+                <span class="item-price">₹460</span>
+              </div>
+              <p class="item-desc">Simmered San Marzano tomatoes, roasted bell peppers, feta crumbles, two runny eggs, served with warm sourdough bread.</p>
+              <div class="item-meta">
+                <span class="dietary-badge">Vegetarian</span>
+                <span class="calories">520 kcal</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 6: Tart -->
+          <article class="menu-card" data-category="desserts">
+            <div class="menu-card-img-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80" 
+                alt="Vanilla Bean Crème Brûlée Tart" 
+                class="menu-card-img" 
+                loading="lazy"
+              />
+            </div>
+            <div class="menu-card-content">
+              <div class="item-header">
+                <h3 class="item-name">Crème Brûlée Fruit Tart</h3>
+                <span class="item-price">₹340</span>
+              </div>
+              <p class="item-desc">Crisp shortbread shell filled with Madagascar vanilla bean pastry custard, torched sugar crust, and fresh raspberries.</p>
+              <div class="item-meta">
+                <span class="dietary-badge">Nut-Free</span>
+                <span class="calories">310 kcal</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 7: Raspberry Danish -->
+          <article class="menu-card" data-category="bakery">
+            <div class="menu-card-img-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=600&q=80" 
+                alt="Raspberry Almond Danish" 
+                class="menu-card-img" 
+                loading="lazy"
+              />
+            </div>
+            <div class="menu-card-content">
+              <div class="item-header">
+                <h3 class="item-name">Raspberry Almond Danish</h3>
+                <span class="item-price">₹270</span>
+              </div>
+              <p class="item-desc">Crisp puff pastry crown centered with tart house-made raspberry jam, almond marzipan swirl, and toasted slivers.</p>
+              <div class="item-meta">
+                <span class="dietary-badge">Vegetarian</span>
+                <span class="calories">320 kcal</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 8: Cold Brew -->
+          <article class="menu-card" data-category="drinks">
+            <div class="menu-card-img-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=600&q=80" 
+                alt="Lavender Butterfly Pea Cold Brew" 
+                class="menu-card-img" 
+                loading="lazy"
+              />
+            </div>
+            <div class="menu-card-content">
+              <div class="item-header">
+                <h3 class="item-name">Butterfly Pea Cold Brew</h3>
+                <span class="item-price">₹280</span>
+              </div>
+              <p class="item-desc">Slow-steeped Ethiopian light roast topped with blue butterfly pea floral infusion and silky coconut milk.</p>
+              <div class="item-meta">
+                <span class="dietary-badge">Vegan</span>
+                <span class="calories">95 kcal</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 9: Pavlova / Berry Cake -->
+          <article class="menu-card" data-category="desserts">
+            <div class="menu-card-img-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=600&q=80" 
+                alt="Peach & Strawberry Cream Pavlova" 
+                class="menu-card-img" 
+                loading="lazy"
+              />
+            </div>
+            <div class="menu-card-content">
+              <div class="item-header">
+                <h3 class="item-name">Blush Strawberry Cloud Cake</h3>
+                <span class="item-price">₹350</span>
+              </div>
+              <p class="item-desc">Light-as-air chiffon sponge layered with fresh strawberry compote, Chantilly cream, and edible cornflower petals.</p>
+              <div class="item-meta">
+                <span class="dietary-badge">Vegetarian</span>
+                <span class="calories">290 kcal</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="menu-download text-center">
+          <p>Looking for catering or customized celebratory cakes? <a href="#contact" class="inline-link">Reach out to our pastry team →</a></p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================
+         PHOTO GALLERY / ATMOSPHERE
+         ========================================================= -->
+    <section class="gallery-section" id="gallery">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Atmosphere &amp; Moments</span>
+          <h2 class="section-title">Life Inside Bloom &amp; Butter</h2>
+          <p class="section-subtitle">A glimpse into our sunlit mornings, warm cups, and cozy nooks.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="gallery-item item-large">
+            <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=800&q=80" alt="Pastry display counter" loading="lazy" />
+            <figcaption class="gallery-caption">Freshly baked morning spread</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=80" alt="Pouring latte art into a ceramic cup" loading="lazy" />
+            <figcaption class="gallery-caption">Artisanal Barista Brews</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1507133750040-4a8f57021571?auto=format&fit=crop&w=600&q=80" alt="Sunlit reading corner with pastries" loading="lazy" />
+            <figcaption class="gallery-caption">Cozy Reading Nooks</figcaption>
+          </figure>
+          <figure class="gallery-item item-wide">
+            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80" alt="Espresso machine brewing coffee" loading="lazy" />
+            <figcaption class="gallery-caption">Small batch roasted beans</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         CUSTOMER TESTIMONIALS
+         ========================================================= -->
+    <section class="testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Words of Warmth</span>
+          <h2 class="section-title">Loved by Our Community</h2>
+          <p class="section-subtitle">Real moments shared by patrons who make our café feel like home.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- Review 1 -->
+          <blockquote class="testimonial-card">
+            <div class="rating-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="review-quote">
+              "The Rose Pistachio croissant is worth crossing the whole city for. The soft pastel aesthetic, acoustic indie playlists, and kind staff make it my favorite creative workspace."
+            </p>
+            <footer class="reviewer-meta">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Elena Vance" class="reviewer-avatar" />
+              <div>
+                <cite class="reviewer-name">Elena Vance</cite>
+                <span class="reviewer-role">Architect &amp; Daily Regular</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <!-- Review 2 -->
+          <blockquote class="testimonial-card">
+            <div class="rating-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="review-quote">
+              "Bloom &amp; Butter catered our boutique launch event with their mini choux and strawberry matcha. Every guest was raving about how gorgeous and delicious the food was!"
+            </p>
+            <footer class="reviewer-meta">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" alt="Marcus Chen" class="reviewer-avatar" />
+              <div>
+                <cite class="reviewer-name">Marcus Chen</cite>
+                <span class="reviewer-role">Creative Director</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <!-- Review 3 -->
+          <blockquote class="testimonial-card">
+            <div class="rating-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="review-quote">
+              "Finding gluten-free brunch that actually tastes heavenly is rare. Their Shakshuka skillet paired with the butterfly pea cold brew is pure bliss. 10/10 recommendation."
+            </p>
+            <footer class="reviewer-meta">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&q=80" alt="Sophia Alverez" class="reviewer-avatar" />
+              <div>
+                <cite class="reviewer-name">Sophia Alverez</cite>
+                <span class="reviewer-role">Food &amp; Lifestyle Blogger</span>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         RESERVATION & CONTACT / HOURS SECTION
+         ========================================================= -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        
+        <div class="contact-grid">
+          
+          <!-- Opening Hours & Contact Details Column -->
+          <div class="info-card" id="hours">
+            <span class="section-tag">Visit Our Sanctuary</span>
+            <h2 class="section-title">Hours &amp; Location</h2>
+            <p class="contact-lead">Step in for a warm pastry or book a cozy corner table in advance.</p>
+
+            <!-- Hours Table -->
+            <div class="hours-box">
+              <h3 class="box-heading">Opening Hours</h3>
+              <ul class="hours-list">
+                <li>
+                  <span class="day">Monday – Thursday</span>
+                  <span class="hours">7:30 AM – 7:00 PM</span>
+                </li>
+                <li>
+                  <span class="day">Friday</span>
+                  <span class="hours">7:30 AM – 8:30 PM</span>
+                </li>
+                <li>
+                  <span class="day">Saturday</span>
+                  <span class="hours">8:00 AM – 9:00 PM</span>
+                </li>
+                <li>
+                  <span class="day highlight">Sunday (Brunch Day)</span>
+                  <span class="hours highlight">8:00 AM – 6:00 PM</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Contact List -->
+            <div class="contact-details">
+              <div class="detail-item">
+                <span class="detail-icon">📍</span>
+                <div>
+                  <strong>Address</strong>
+                  <p>42 Blossom Lane, Garden District, Portland, OR 97201</p>
+                </div>
+              </div>
+              <div class="detail-item">
+                <span class="detail-icon">📞</span>
+                <div>
+                  <strong>Telephone</strong>
+                  <p><a href="tel:+15552345678">(555) 234-5678</a></p>
+                </div>
+              </div>
+              <div class="detail-item">
+                <span class="detail-icon">✉️</span>
+                <div>
+                  <strong>Email</strong>
+                  <p><a href="mailto:hello@bloomandbutter.com">hello@bloomandbutter.com</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Reservation Form Column -->
+          <div class="form-card" id="reservation">
+            <span class="section-tag">Table Booking</span>
+            <h2 class="section-title">Reserve a Table</h2>
+            <p class="contact-lead">We hold tables for 15 minutes. For parties larger than 8, please give us a direct phone call.</p>
+
+            <form class="reservation-form" id="bookingForm" onsubmit="handleReservation(event)">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="fullName">Full Name</label>
+                  <input type="text" id="fullName" name="fullName" placeholder="Clara Miller" required />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" placeholder="clara@example.com" required />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" required />
+                </div>
+                <div class="form-group">
+                  <label for="guests">Guests</label>
+                  <select id="guests" name="guests" required>
+                    <option value="1">1 Person (Cozy Nook)</option>
+                    <option value="2" selected>2 Guests</option>
+                    <option value="3">3 Guests</option>
+                    <option value="4">4 Guests</option>
+                    <option value="5-8">5 to 8 Guests</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="date">Reservation Date</label>
+                  <input type="date" id="date" name="date" required />
+                </div>
+                <div class="form-group">
+                  <label for="time">Preferred Time</label>
+                  <select id="time" name="time" required>
+                    <option value="09:00">09:00 AM (Breakfast)</option>
+                    <option value="10:30">10:30 AM (Brunch)</option>
+                    <option value="12:00">12:00 PM (Lunch)</option>
+                    <option value="14:00">02:00 PM (Afternoon Tea)</option>
+                    <option value="17:30">05:30 PM (Early Dinner)</option>
+                    <option value="19:00">07:00 PM (Evening)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="notes">Dietary Notes &amp; Special Requests (Optional)</label>
+                <textarea id="notes" name="notes" rows="3" placeholder="Celebration, quiet table, gluten sensitivity, high chair, etc."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">Confirm Reservation</button>
+              
+              <!-- Form Success Feedback Message -->
+              <div id="form-feedback" class="form-feedback hidden" role="alert">
+                ✨ Thank you! Your table request has been received. A pastel confirmation is on its way to your inbox!
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================
+       FOOTER
+       ========================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-col brand-col">
+        <a href="#top" class="brand-logo footer-logo">
+          <span class="logo-icon" aria-hidden="true">🌸</span>
+          <span class="logo-text">Bloom &amp; Butter</span>
+        </a>
+        <p class="footer-tagline">
+          Wholesome bakes, delicate botanicals, and peaceful moments in our pastel sanctuary.
+        </p>
+        <div class="social-links">
+          <a href="#" class="social-btn" aria-label="Instagram">IG</a>
+          <a href="#" class="social-btn" aria-label="Pinterest">PI</a>
+          <a href="#" class="social-btn" aria-label="Facebook">FB</a>
+          <a href="#" class="social-btn" aria-label="Tiktok">TK</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Navigation</h4>
+        <ul class="footer-nav">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">Our Story</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#specials">Weekly Deals</a></li>
+          <li><a href="#reservation">Reservations</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Information</h4>
+        <ul class="footer-nav">
+          <li><a href="#hours">Opening Hours</a></li>
+          <li><a href="#contact">Private Events</a></li>
+          <li><a href="#menu">Allergen Guide</a></li>
+          <li><a href="#">Pastry Masterclasses</a></li>
+          <li><a href="#">Gift Cards</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col newsletter-col">
+        <h4 class="footer-heading">Join The Pastel Club</h4>
+        <p class="footer-text">Subscribe for secret seasonal menu tastings and 15% off your first brunch.</p>
+        <form class="newsletter-form" onsubmit="handleNewsletter(event)">
+          <input type="email" placeholder="Enter your email" required class="newsletter-input" aria-label="Your email address" />
+          <button type="submit" class="btn btn-primary btn-newsletter">Join</button>
+        </form>
+        <span id="newsletter-msg" class="newsletter-msg hidden">🌸 Welcome to our family! Check your inbox.</span>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container bottom-container">
+        <p>&copy; 2026 Bloom &amp; Butter Café &amp; Bakery. All rights reserved.</p>
+        <div class="bottom-links">
+          <a href="#">Privacy Policy</a>
+          <span class="dot">•</span>
+          <a href="#">Terms of Service</a>
+          <span class="dot">•</span>
+          <a href="#top">Back to Top ↑</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
